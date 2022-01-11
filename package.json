@@ -1,0 +1,11 @@
+{
+  "name": "advancedconsole",
+  "version": "1.0.0",
+  "description": "NodeJS Advanced Console",
+  "main": "app.js",
+  "author": "Zlynt <thezlynt@gmail.com> (https://zlynt.github.io)",
+  "license": "MIT",
+  "scripts": {
+    "test": "node test.js"
+  }
+}
