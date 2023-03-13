@@ -1,11 +1,35 @@
 {
-  "name": "advancedconsole",
-  "version": "1.0.0",
-  "description": "NodeJS Advanced Console",
-  "main": "app.js",
-  "author": "Zlynt <thezlynt@gmail.com> (https://zlynt.github.io)",
-  "license": "MIT",
+  "name": "hus-console",
+  "version": "2.1.2",
+  "description": "NodeJS Console with colors and much more",
+  "main": "lib/index.js",
+  "module": "esm/index.js",
+  "types": "lib/index.d.js",
   "scripts": {
-    "test": "node test.js"
+    "build": "npm run build:cjs && npm run build:esm && npm run build:umd",
+    "build:cjs": "tsc -p tsconfig.cjs.json",
+    "build:esm": "tsc -p tsconfig.esm.json",
+    "build:umd": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "lib",
+    "esm",
+    "umd"
+  ],
+  "keywords": ["console", "text", "background", "color", "custom", "typescript"],
+  "author": "Zlynt <contact@zlyntlab.com> (https://zlynt.github.io)",
+  "license": "MIT",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "5.53.0",
+    "@typescript-eslint/parser": "5.53.0",
+    "eslint": "8.35.0",
+    "eslint-config-prettier": "8.6.0",
+    "eslint-plugin-prettier": "4.2.1",
+    "prettier": "2.8.4",
+    "ts-loader": "9.4.2",
+    "typescript": "4.9.5",
+    "webpack": "5.75.0",
+    "webpack-cli": "5.0.1"
   }
 }
